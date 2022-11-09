@@ -60,4 +60,4 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(-1)
 
     def test_ei_voi_ottaa_negatiivista(self):
-        self.assertAlmostEqual(self.varasto.ota_varastosta(-1), 0.0)
+        self.assertAlmostEqual(self.varasto.ota_varastosta(-1), 1.0)
